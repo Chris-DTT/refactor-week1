@@ -1,0 +1,171 @@
+/* Converted all measurements in 'px' to 'rem' on the basis that 16px = 1rem for better scalability */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+.header {
+    padding: 1.25rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+    /* Added flexbox container to clean up code */
+    display: flex;
+}
+
+.header h1 {
+    /* Removed 'display: inline-block;' due to redundancy with flexbox */
+    font-size: 3rem;
+    /* Added flex property */
+    flex: 1;
+}
+
+.header h1 .seo {
+    color: #d9dcd6;
+}
+
+/* Changed 'div' selector */
+.header nav {
+    padding-top: 0.9375rem;
+    margin-right: 1.25rem;
+    float: right;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 1.25rem;
+    /* Added flex property */
+    flex: 2;
+    /* Added flexbox container */
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Changed 'ul' selector to 'a' to reflect removal of list elements from the 'header' section */
+.header nav a {
+    /* Removed 'list-style-type: none;' to reflect removal of list elements from the 'header' section */
+    flex: initial;
+    /* Added 'margin-left' and 'font-size' properties to comply with client appearance requirements */
+    margin-left: 5%;
+    font-size: 75%;
+}
+
+/* Removed '.header nav ul li' to reflect removal of list elements from the 'header' section */
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.hero {
+    /* Adjusted 'height' from '50rem' to '40rem' to meet customer appearance requirements */
+    height: 40rem;
+    width: 100%;
+    margin-bottom: 1.5625rem;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.float-left {
+    float: left;
+    margin-right: 1.5625rem;
+}
+
+.float-right {
+    float: right;
+    margin-left: 1.5625rem;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 1.25rem;
+}
+
+.benefits {
+    margin-right: 1.25rem;
+    padding: 1.25rem;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: #2589bd;
+}
+
+/* Consolidated separate selectors with identical properties into a single group selector */
+.benefit-lead,
+.benefit-brand,
+.benefit-cost {
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+/* Consolidated separate selectors with identical properties into a single group selector */
+.benefit-lead h3,
+.benefit-brand h3,
+.benefit-cost h3 {
+    margin-bottom: 0.625rem;
+    text-align: center;
+    /* Added 'font-weight: bolder;' to comply with client appearance requirements */
+    font-weight: bolder;
+}
+
+/* Consolidated separate selectors with identical properties into a single group selector */
+.benefit-lead img,
+.benefit-brand img,
+.benefit-cost img {
+    display: block;
+    margin: 0.625rem auto;
+    max-width: 9.375rem;
+}
+
+/* Consolidated separate selectors with identical properties into a single group selector */
+.search-engine-optimization,
+.online-reputation-management,
+.social-media-marketing {
+    margin-bottom: 1.25rem;
+    padding: 3.125rem;
+    height: 18.75rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/* Consolidated separate selectors with identical properties into a single group selector */
+.search-engine-optimization img,
+.online-reputation-management img,
+.social-media-marketing img {
+    max-height: 12.5rem;
+}
+
+/* Consolidated separate selectors with identical properties into a single group selector */
+.search-engine-optimization h2,
+.online-reputation-management h2,
+.social-media-marketing h2 {
+    margin-bottom: 1.25rem;
+    font-size: 2.25rem;
+    /* Added 'font-weight: bolder;' to comply with client appearance requirements */
+    font-weight: bolder;
+}
+
+.footer {
+    padding: 1.875rem;
+    clear: both;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 1.25rem;
+}
